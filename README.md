@@ -1,46 +1,39 @@
-# Personal Resume Website — Original HTML Baseline
+# Personal Resume Website — CSS Midterm Update
 
-This folder contains the **original HTML-only version** of Pranav Biju Krishnan's personal resume website, prepared to match the HTML module's assignment criteria.
+This is the CSS-enhanced version of the existing HTML resume website. It is intended to replace the `index.html` file in the **same GitHub repository** as the original HTML baseline, with `styles.css` added alongside it.
 
 ## Files
 
-- `index.html`: Semantic HTML page with resume content, navigation and a skills table
-- `assets/pranav-portrait.jpg`: Personal photograph referenced by the HTML
+- `index.html` — updated semantic HTML page linked to a separate stylesheet
+- `styles.css` — all styling for font, layout, color, selectors, responsive design and interactions
+- `assets/pranav-portrait.jpg` — existing photograph, unchanged from the original site
 
-## How to view
+## What changed from the original HTML-only version
 
-1. Keep the entire folder together so the image path remains valid.
-2. Double-click `index.html` to open it in a web browser.
-3. Click the navigation links to jump to sections.
+1. Linked an external stylesheet using `<link rel="stylesheet" href="styles.css">`.
+2. Applied an intentional consistent color palette (ink, teal, mint, off-white) using CSS custom properties in `:root`.
+3. Added type hierarchy with Outfit for headings and DM Sans for body text, with system-font fallbacks.
+4. Organized navigation using Flexbox and kept the header visible with `position: sticky`.
+5. Used CSS Grid for the hero, education, projects, skills, and contact layouts.
+6. Styled semantic `<article>` items as cards and formatted the existing actual `<table>` as a readable skills table.
+7. Improved alignment, margins, padding, borders, radii, line-height and responsive whitespace.
+8. Demonstrated element (`body`, `h2`, `a`), class (`.card`, `.main-nav`) and ID (`#skills`, `#contact` via attribute selectors and anchors) selectors, hover and focus states, pseudo-elements and media queries.
+9. Added mobile layouts with `@media` breakpoints and accessible keyboard focus and reduced-motion support.
+10. Preserved the existing resume facts, personal portrait, email, LinkedIn and major content sections.
 
-## HTML features included
+## Deploy to the SAME GitHub Pages site
 
-- HTML document setup (`<!DOCTYPE html>`, language, metadata and title)
-- Header with name, tagline and photo (`header`, `figure`, `img`, `figcaption`)
-- Semantic navigation (`nav`, `ul`, `a`)
-- Professional objective and resume sections (`main`, `section`, `article`)
-- Work experience, education, projects, skills, training, extracurriculars and contact details
-- Skills table (`table`, `caption`, `thead`, `tbody`, `th`, `td`)
-- Contact and social links (`address`, `mailto:` and an external LinkedIn link)
-- Footer and internal Back to Top link
+Repository: https://github.com/pranav777123123123-create/personal-resume-website-Copy
+Site: https://pranav777123123123-create.github.io/personal-resume-website-Copy/
 
-**This version intentionally has no CSS or JavaScript.** Its native browser formatting is expected. The later midterm version will add a separate CSS stylesheet, and its changes can be documented against this baseline.
+1. In your existing GitHub repository, choose **Add file → Upload files**.
+2. Upload the updated `index.html` and new `styles.css` to the **repository root**.
+3. If GitHub's web uploader refuses a duplicate filename, replace the content of `index.html` using its pencil **Edit this file** control and commit the change, then upload `styles.css` separately.
+4. Do not delete `assets/pranav-portrait.jpg`, or add an extra enclosing folder.
+5. Commit with a message such as **Style resume website with CSS for midterm**.
+6. Keep the same Pages settings (Deploy from branch → main → /(root)). Visit the same site link and refresh after deployment.
+7. Confirm the picture loads, desktop and mobile layouts work, and navigation/LinkedIn/email links are clickable.
 
-## Optional GitHub Pages deployment (after creating a GitHub account)
+## Academic transparency
 
-1. Sign up at https://github.com/ (if you haven't already).
-2. Create a **public** repository, e.g. `personal-resume-website`.
-3. Upload `index.html` and the `assets` folder into the root of the repository.
-4. Commit the initial HTML-only version with a message such as `Add original HTML resume website`.
-5. Go to **Settings → Pages → Build and deployment**.
-6. Choose **Deploy from a branch**, select `main` and `/ (root)`, and save.
-7. Visit `https://YOUR-USERNAME.github.io/personal-resume-website/` after GitHub Pages publishes the site.
-8. When ready for your midterm, add CSS in a new commit to the same repository, retaining the original HTML version in Git history.
-
-## Content review before publishing
-
-- The college name `Treamis World School` and degree titles were carried over from the supplied PDF; verify exact official wording.
-- The projects' tools and the additional software skills were confirmed by the student.
-- The certification preparation is correctly labeled **in progress**, not as an awarded certificate.
-- The page includes an email address and LinkedIn URL but intentionally omits the phone number from the publicly published webpage.
-- This is a newly reconstructed baseline: do not represent it as a website submitted during the earlier HTML module.
+The initial HTML-only version was reconstructed after the earlier HTML module and published as a baseline. The second GitHub commit is the CSS-enhanced midterm update. The PDF report describes the actual changes in these files; review the implementation so you can explain the techniques in your own words.
